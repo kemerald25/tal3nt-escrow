@@ -1,0 +1,33 @@
+{
+  "name": "proofpay-backend",
+  "version": "1.0.0",
+  "description": "WhatsApp-native escrow service on Base blockchain",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "deploy": "vercel --prod",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@sentry/node": "^7.100.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.10.0",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "twilio": "^4.19.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.8",
+    "hardhat": "^2.19.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
+
